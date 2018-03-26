@@ -1,0 +1,116 @@
+* {
+	font-family: "Source Code Pro", "Courier New";
+	color: gray;
+}
+
+body {
+	background: black;
+	margin: 0;
+	background-image: url(../img/projects/twowalls/1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.grid {
+	position: fixed;	
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-gap: 0px;
+	grid-template-columns: 400px 1fr 1fr 1fr;
+	grid-template-rows: 60px 1fr 1fr 60px;
+	grid-template-areas: 
+		"title . . ."
+		"nav . . ."
+		". . . ."
+		"copyright links links links";
+	}
+
+	.title {
+		background: transparent;
+		grid-area: title;
+	}
+
+	.nav {
+		background: transparent;
+		grid-area: nav;
+	}
+
+	.copyright {
+		background: transparent;
+		grid-area: copyright;
+	}
+
+	.links {
+		background: transparent;
+		grid-area: links;
+	}
+
+	.footer {
+		background: transparent;
+		grid-area: footer;
+	}
+
+	img {
+		position: relative;
+		float: right;
+		width: 40px;
+		height: 40px;
+		top: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+		opacity: .3;
+	}
+	
+	img:hover {
+		opacity: 1;
+		animation: blinker 1.85s linear infinite;
+}
+
+	@keyframes blinker {
+	  50% {
+	 opacity: 0;
+	  }
+	}
+
+	h1 {
+		position: relative;
+		left: 40px;
+	}
+
+	h3 {
+		position: relative;
+		left: 20px;
+		bottom: -10px;
+		font-size: 16px;
+		opacity: .3;
+	}
+
+	li {
+		position: relative;
+		top: -10px;
+		list-style: none;
+		font-size: 18px;
+		opacity: .5;
+	}
+
+	li:hover {
+		width: 260px;
+		background: gray;
+		color: white;
+		font-size: 24px;
+		animation: blinker 1.85s linear infinite;
+			}@keyframes blinker {
+			50% {opacity: 1;}
+	}
+
+	._ {
+  animation: blinker 1.85s linear infinite;
+}
+
+	@keyframes blinker {
+	  50% {
+	 opacity: 0;
+	  }
+	}
+
